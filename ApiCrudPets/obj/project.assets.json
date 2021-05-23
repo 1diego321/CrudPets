@@ -1627,7 +1627,10 @@
         },
         "runtime": {
           "bin/placeholder/ApiCrudPets.BLL.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "ApiCrudPets.DAL/1.0.0": {
         "type": "project",

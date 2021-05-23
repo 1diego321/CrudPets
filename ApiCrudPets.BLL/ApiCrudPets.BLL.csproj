@@ -11,11 +11,14 @@
 
   <ItemGroup>
     <Folder Include="Models\Owner\DTO\" />
-    <Folder Include="Models\Pet\DTO\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ApiCrudPets.DAL\ApiCrudPets.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
 ﻿using ApiCrudPets.BLL.Extensions;
+using ApiCrudPets.BLL.Services;
+using ApiCrudPets.BLL.Services.Abstractions;
 using ApiCrudPets.DAL.Data;
 using ApiCrudPets.DAL.Repositories;
 using ApiCrudPets.DAL.Repositories.Abstractions;
@@ -16,7 +18,7 @@ namespace ApiCrudPets.Setups
 {
     public static class Dependencies
     {
-        public static void SetupDependencies(this IServiceCollection services, IConfiguration configuration)
+        public static void ConfigureDependencies(this IServiceCollection services, IConfiguration configuration)
         {
             //DbContext
             services.AddDbContext<AppDbContext>(options =>
@@ -33,6 +35,10 @@ namespace ApiCrudPets.Setups
 
             //UnitOfWork
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            //Services
+            services.AddScoped<IPetService, PetService>();
+            services.AddScoped<IOwnerService, OwnerService>();
         }
     }
 }
