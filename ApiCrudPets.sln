@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCrudPets", "ApiCrudPets\ApiCrudPets.csproj", "{765B4331-532A-4209-91E8-967E5E6BDEED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCrudPets.BLL", "ApiCrudPets.BLL\ApiCrudPets.BLL.csproj", "{1696A411-60CC-482E-A037-9BE3272E75BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCrudPets.DAL", "ApiCrudPets.DAL\ApiCrudPets.DAL.csproj", "{6D2AAF8A-3B65-40A9-9E15-134160AD134D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{765B4331-532A-4209-91E8-967E5E6BDEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765B4331-532A-4209-91E8-967E5E6BDEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765B4331-532A-4209-91E8-967E5E6BDEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1696A411-60CC-482E-A037-9BE3272E75BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1696A411-60CC-482E-A037-9BE3272E75BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1696A411-60CC-482E-A037-9BE3272E75BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1696A411-60CC-482E-A037-9BE3272E75BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D2AAF8A-3B65-40A9-9E15-134160AD134D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2AAF8A-3B65-40A9-9E15-134160AD134D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2AAF8A-3B65-40A9-9E15-134160AD134D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2AAF8A-3B65-40A9-9E15-134160AD134D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ApiCrudPets.Models
+namespace ApiCrudPets.DAL.Entities
 {
     public class AppUser
     {
