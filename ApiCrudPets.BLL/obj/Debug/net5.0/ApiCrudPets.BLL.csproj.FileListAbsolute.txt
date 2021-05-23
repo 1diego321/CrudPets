@@ -1,0 +1,15 @@
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\bin\Debug\net5.0\ApiCrudPets.BLL.deps.json
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\bin\Debug\net5.0\ApiCrudPets.BLL.dll
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\bin\Debug\net5.0\ref\ApiCrudPets.BLL.dll
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\bin\Debug\net5.0\ApiCrudPets.BLL.pdb
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.csprojAssemblyReference.cache
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.AssemblyInfoInputs.cache
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.AssemblyInfo.cs
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.csproj.CoreCompileInputs.cache
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.dll
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ref\ApiCrudPets.BLL.dll
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.pdb
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\bin\Debug\net5.0\ApiCrudPets.DAL.dll
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\bin\Debug\net5.0\ApiCrudPets.DAL.pdb
+C:\Users\1dieg\Documents\.NET\.NET CORE\ASP.NET API\ApiCrudPets\ApiCrudPets.BLL\obj\Debug\net5.0\ApiCrudPets.BLL.csproj.CopyComplete
