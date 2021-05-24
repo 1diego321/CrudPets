@@ -22,19 +22,20 @@ namespace ApiCrudPets.BLL.Services
             _contentTypeProvider = new FileExtensionContentTypeProvider();
         }
 
-        public async Task<string> CreateImageAsync(IFormFile image)
+        protected async Task<string> CreateImageAsync(IFormFile image)
         {
-            string mainRoute = _hostEnvironment.WebRootPath;
+            string mainRoute = _hostEnvironment.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
             string imgFolderRoute = Path.Combine(mainRoute, "img");
             string imgName = $"img_{Guid.NewGuid()}{Path.GetExtension(image.FileName)}";
-            string imgRoute = Path.Combine(imgName, imgName);
+            string imgRoute = Path.Combine(imgFolderRoute, imgName);
+
 
             if (!Directory.Exists(imgFolderRoute))
             {
                 Directory.CreateDirectory(imgFolderRoute);
             }
 
-            using(var fs = new FileStream(imgRoute, FileMode.Create))
+            using (var fs = new FileStream(imgRoute, FileMode.Create))
             {
                 await image.CopyToAsync(fs);
             }

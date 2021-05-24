@@ -10,10 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Owner\DTO\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ApiCrudPets.DAL\ApiCrudPets.DAL.csproj" />
   </ItemGroup>
 

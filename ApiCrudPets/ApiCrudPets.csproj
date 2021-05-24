@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ApiCrudPets.BLL\ApiCrudPets.BLL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiCrudPets.BLL\ApiCrudPets.BLL.csproj" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>

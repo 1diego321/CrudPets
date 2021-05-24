@@ -12,10 +12,11 @@ namespace ApiCrudPets.BLL.Services.Abstractions
     public interface IPetService
     {
         ImageInfoDTO GetImage(string imgName);   
-        Task<string> CreateImageAsync(IFormFile image);
+        //Task<string> CreateImageAsync(IFormFile image);
         Task<bool> UpdateAsync(PetCreateOrUpdateDTO model, int id);
         Task<IEnumerable<PetDTO>> GetAllAsync();
         Task<PetDTO> GetByIdAsync(int id);
+        Task<bool> CreateAsync(PetCreateOrUpdateDTO model);
 
     }
 }

@@ -17,6 +17,8 @@ namespace ApiCrudPets
 {
     public class Startup
     {
+        private const string _FrontendDev = "FrontendDev";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -35,6 +37,19 @@ namespace ApiCrudPets
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiCrudPets", Version = "v1" });
             });
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy(name: _FrontendDev, builder =>
+                {
+                    builder.WithOrigins("http://127.0.0.1:5500").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +65,8 @@ namespace ApiCrudPets
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(_FrontendDev);
 
             app.UseAuthorization();
 
