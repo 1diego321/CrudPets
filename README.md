@@ -6,6 +6,8 @@
 • Autorización y autenticación con JWT Json Web Token </br>
 • Sql Server </br>
 • Entity FrameworkCore Code First </br>
+• Bootstrap </br>
+• SweetAlert </br>
 
 <h3>Conceptos | Patrones de diseño:</h3>
 
