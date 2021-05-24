@@ -70,7 +70,7 @@ function loadPetsTable() {
         });
 }
 
-function openDelete(id){
+function openDelete(id) {
     Swal.fire({
         title: 'Estás seguro?',
         text: "No podrás recuperar la información!",
@@ -80,13 +80,43 @@ function openDelete(id){
         cancelButtonColor: '#d33',
         confirmButtonText: 'Si, borrar!',
         cancelButtonText: 'Cancelar'
-      }).then((result) => {
+    }).then((result) => {
         if (result.isConfirmed) {
-          Swal.fire(
-            'Eliminado!',
-            'Se borró correctamente.',
-            'success'
-          )
+            deletePet(id);
         }
-      })
+    })
+}
+
+function deletePet(id){
+    const headers = {
+        method: "DELETE"
+    }
+
+    fetch(urlPets + id, headers)
+        .then(res => res.json())
+        .then(json => {
+            if (json.success) {
+                Swal.fire(
+                    'Eliminado!',
+                    json.message,
+                    'success'
+                );
+
+                loadPetsTable();
+            }else{
+                Swal.fire(
+                    'Error!',
+                    json.message,
+                    'error'
+                  );
+            }
+        }).catch(e => {
+            Swal.fire(
+                'Error!',
+                'Hubo un error desconocido..',
+                'error'
+              );
+
+              console.log(e);
+        });
 }

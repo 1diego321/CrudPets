@@ -45,12 +45,12 @@ namespace ApiCrudPets.Controllers
             };
 
             oRes.Success = true;
-            
+
             return Ok(oRes);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm]PetCreateOrUpdateDTO model)
+        public async Task<IActionResult> Create([FromForm] PetCreateOrUpdateDTO model)
         {
             ApiResponseDTO oRes = new();
 
@@ -61,7 +61,7 @@ namespace ApiCrudPets.Controllers
                 return BadRequest(oRes);
             }
 
-            if(await _service.CreateAsync(model))
+            if (await _service.CreateAsync(model))
             {
                 oRes.Success = true;
                 oRes.Message = "Se creó correctamente!";
@@ -74,6 +74,24 @@ namespace ApiCrudPets.Controllers
 
                 return StatusCode(StatusCodes.Status500InternalServerError, oRes);
             }
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            ApiResponseDTO oRes = new();
+
+            if (await _service.DeleteAsync(id))
+            {
+                oRes.Success = true;
+                oRes.Message = "Se borró correctamente!";
+
+                return Ok(oRes);
+            }
+
+            oRes.Message = "Hubo un problema al intentar el eliminar el recurso";
+
+            return StatusCode(StatusCodes.Status500InternalServerError, oRes);
         }
 
         #region UTILITY METHODS

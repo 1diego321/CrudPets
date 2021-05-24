@@ -8,11 +8,14 @@ window.addEventListener("load", function () {
 function createPet(e) {
     e.preventDefault();
 
+    var btn = document.getElementById("btnAdd");
     var form = document.getElementById("frmPet");
 
     const headers = {
         'Accept': 'application/json'
     };
+
+    btn.disabled = true;
 
     const body = new FormData(form)
 
@@ -34,20 +37,24 @@ function createPet(e) {
                         msg += `${x}</br>`;
                     });
 
-                    fireSwal('Error en las validaciones',msg,'error');
-
+                    fireSwal('Error en las validaciones', msg, 'error');
+                    btn.disabled = false;
                     return;
                 }
 
-                fireSwal('Error :(',json.message,'error');
+                fireSwal('Error :(', json.message, 'error');
+                btn.disabled = false;
             }
         }).catch(e => {
-            fireSwal('Error :(','Hubo un error.. ','error');
+            fireSwal('Error :(', 'Hubo un error.. ', 'error');
             console.log(e);
+            btn.disabled = false;
         });
+
+
 }
 
-function fireSwal(title,message,type){
+function fireSwal(title, message, type) {
     Swal.fire(
         title,
         message,

@@ -81,7 +81,8 @@ namespace ApiCrudPets.BLL.Services
 
             if (ok)
             {
-                DeleteImage(imgName);
+                if (imgName != null)
+                    DeleteImage(imgName);
             }
 
             return ok;

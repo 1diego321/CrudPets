@@ -17,6 +17,7 @@ namespace ApiCrudPets.BLL.Services.Abstractions
         Task<IEnumerable<PetDTO>> GetAllAsync();
         Task<PetDTO> GetByIdAsync(int id);
         Task<bool> CreateAsync(PetCreateOrUpdateDTO model);
+        Task<bool> DeleteAsync(int id);
 
     }
 }
